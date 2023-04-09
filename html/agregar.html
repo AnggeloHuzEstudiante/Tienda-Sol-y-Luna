@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/fed6c5b9e1.js" crossorigin="anonymous"></script>
+    <title>SOL Y LUNA - agregar</title>
+</head>
+<body>
+    
+    <header class="cabecera">
+        <nav class="redes-sociales">
+            <ul>
+                <li><a href="https://wa.me/584120686329?text=(Creador de la pagina)"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href="https://www.instagram.com/anggelo_huz/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://github.com"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCw8l37_Yv3WI10P9sCeolNQ"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="https://telegram.me/Huz_Anggelo"><i class="fa-brands fa-telegram"></i></a></li>
+            </ul>
+        </nav>
+
+        <div class="título">
+            <span class="icono-titulo">
+                <i class="fa-sharp fa-solid fa-sun"></i>
+            </span>
+            <h1>
+                SOL Y LUNA
+            </h1>
+            <span class="icono-titulo">
+                <i class="fa-sharp fa-solid fa-moon"></i>
+            </span>
+        </div>
+
+        <nav class="barra-navegacion">
+            <ul>
+                <li><a href="../index.html" class="activo">INICIO</a></li>
+                <li><a href="agregar.html">AGREGAR</a></li>
+                <li><a href="editar.html">EDITAR</a></li>
+                <li><a href="eliminar.html">ELIMINAR</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="cuerpo" id="cuerpo">
+        <section class="agregar">
+            <form class="formulario">
+                <h2>
+                    INGRESAR CATEGORIA
+                </h2>
+
+                <label for="nombre">
+                   <span>Nombre de la Categoria:</span>
+                   <input type="text" id="nombre" name="nombre" placeholder="Ingresalo aquí" class="celdas" required/>
+                </label>
+
+                <input type="submit" value="REGISTRAR" id="registrar-categoria" class="botn-enviar">
+            </form>
+        </section>
+
+        <section class="agregar"> 
+            <form class="formulario">
+                <h2>
+                    INGRESAR PRODUCTO
+                </h2>
+
+                <label for="categoria-p">
+                    <span>Categoria del Producto:</span>
+                    <select name="categoria-p" id="categoria-p" class="celdas" required>
+
+                    </select>
+                </label>
+
+                <label for="nombre-p">
+                   <span>Nombre del Producto:</span>
+                   <input type="text" id="nombre-p" name="nombre-p" placeholder="Ingresalo aquí" class="celdas" required/>
+                </label>
+
+                <label for="marca-p">
+                    <span>Marca del Producto:</span>
+                    <input type="text" id="marca-p" name="marca-p" placeholder="Ingresalo aquí" class="celdas" required/>
+                </label>
+
+                <label for="precio-p">
+                    <span>Precio del Producto:</span>
+                    <input type="text" id="precio-p" name="precio-p" min="0" max="999999" placeholder="Ingresalo aquí" class="celdas" required/>
+                </label>
+
+                <input type="submit" value="REGISTRAR" id="registrar-producto" class="boton-enviar">
+            </form>
+        </section>
+
+        <section class="agregar"> 
+            <form class="formulario">
+                <h2>
+                    INGRESAR CLIENTE
+                </h2>
+
+                <label for="producto-c">
+                    <span>Producto Comprado:</span>
+                    <select name="producto-c" id="producto-c" class="celdas" required>
+
+                    </select>
+                </label>
+
+                <label for="nombre-c">
+                   <span>Nombre del Cliente:</span>
+                   <input type="text" id="nombre-c" name="nombre-c" placeholder="Ingresalo aquí" class="celdas" required/>
+                </label>
+
+                <label for="apellido-c">
+                    <span>Apellido del Cliente:</span>
+                    <input type="text" id="apellido-c" name="apellido-c" placeholder="Ingresalo aquí" class="celdas" required/>
+                </label>
+
+                <label for="telefono-c">
+                    <span>Telefono del Cliente:</span>
+                    <input type="tel" id="telefono-c" name="telefono-c" placeholder="Ingresalo aquí" class="celdas" pattern="[0][2 || 4][0-9]{2}[-][0-9]{7}" title="Debes Ingresar un numero de telefon con el formato 0412-1234567 o 0271-1234567" required/>
+                </label>
+
+                <label for="email-c">
+                    <span>Correo del Cliente:</span>
+                    <input type="email" id="email-c" name="email-c" class="celdas" maxlength="64" required placeholder="username@gmail.com" pattern=".+@gmail\.com" title="Proporcione solo una dirección de correo electrónico de Google"/>
+                </label>
+
+                <input type="submit" value="REGISTRAR" id="registrar-cliente" class="boton-enviar">
+            </form>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <p>© Copyrigth 2023. Sol y Luna | Anggelo Huz</p>
+    </footer>
+</body>
+</html>
